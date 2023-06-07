@@ -45,17 +45,28 @@ Open `offloading.py` in your code editor. Hold `ctrl` key if you are on Windows 
 
 This will navigate to the file `pipeline_stable_diffusion.py`. To locate this file in your directory, right-click on the filename and choose 'open in' -> 'finder'.
 
-![Location of StableDiffusionPipeline](readme/img1.png)
-
+![Location of StableDiffusionPipeline](readme/img2.png)
 
 ## 🔄 Replace with Project File
 Replace `pipeline_stable_diffusion.py` with the file of the same name from this repository.
 
-
+![Replace `pipeline_stable_diffusion.py`](readme/img3.png)
 
 ## 🏃‍♀️ Run the Program
 Finally, run `offloading.py` to start the program.
 
+ Please note that the model will be downloaded automatically if you are running this code for the first time.
+ 
+![Download Automatically](readme/img4.png)
+
+## 🔍 Check the results
+
+The parameter "tt" is the offloading processing point
+The parameter "ss" is the total denosing steps
+For more details, please check the `offloading.py`
+
+![Results](readme/img5.png)
+ 
 ---
 
 ## 📚 Cite Our Work

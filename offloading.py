@@ -30,6 +30,9 @@ off_step = 4  # Offloading processing point
 scale = 7.5  # Guidance scale for the pipeline
 savepath = "seed"+str(seed)+"step"+str(step)  # Save path for the generated images
 
+# The parameter "tt" is the offloading processing point
+# The parameter "ss" is the total denosing steps
+
 # Generate the first image with the prompt "One Apple on Table"
 prompt = "One Apple on Table"
 image = pipe(prompt, num_inference_steps=step, tt=off_step, ss=True, guidance_scale=scale).images[0]
