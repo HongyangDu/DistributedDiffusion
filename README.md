@@ -44,10 +44,14 @@ Open `offloading.py` in your code editor. Hold `ctrl` key if you are on Windows 
 ![Location of StableDiffusionPipeline](readme/img1.png)
 
 This will navigate to the file `pipeline_stable_diffusion.py`. To locate this file in your directory, right-click on the filename and choose 'open in' -> 'finder'.
-</details>
+
+![Location of StableDiffusionPipeline](readme/img1.png)
+
 
 ## 🔄 Replace with Project File
 Replace `pipeline_stable_diffusion.py` with the file of the same name from this repository.
+
+
 
 ## 🏃‍♀️ Run the Program
 Finally, run `offloading.py` to start the program.
