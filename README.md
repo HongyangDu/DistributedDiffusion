@@ -1,6 +1,6 @@
 # DistributedDiffusion
 
-This repository contains a partial implementation of the system design and algorithm as presented in:
+This repository contains a partial implementation of the algorithm as presented in:
 
 > **"Exploring Collaborative Distributed Diffusion-Based AI-Generated Content (AIGC) in Wireless Networks"**
 
@@ -39,12 +39,9 @@ pip install accelerate
 ```
 
 ## 🔍 Locate StableDiffusionPipeline
-<details>
-<summary>Click to expand!</summary>
-  
-Open `offloading.py` in your code editor. Hold `ctrl` key and click on `StableDiffusionPipeline` if you are on Windows or `command` key if you are on Mac.
+Open `offloading.py` in your code editor. Hold `ctrl` key if you are on Windows or `command` key if you are on Mac, and click on `StableDiffusionPipeline`
 
-![Location of StableDiffusionPipeline](img1.png)
+![Location of StableDiffusionPipeline](readme/img1.png)
 
 This will navigate to the file `pipeline_stable_diffusion.py`. To locate this file in your directory, right-click on the filename and choose 'open in' -> 'finder'.
 </details>
