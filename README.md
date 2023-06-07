@@ -79,9 +79,9 @@ If our code proves useful in your research, please consider citing our work:
 
 ```bibtex
 @article{du2023exploring,
-title={Exploring Collaborative Distributed Diffusion-Based AI-Generated Content (AIGC) in Wireless Networks},
-author={Du, Hongyang and Zhang, Ruichen and Niyato, Dusit and Kang, Jiawen and Xiong, Zehui and Kim, Dong In and Poor, H Vincent and others},
-journal={arXiv preprint arXiv:2304.03446},
-year={2023}
+  title={Exploring Collaborative Distributed Diffusion-Based AI-Generated Content (AIGC) in Wireless Networks},
+  author={Du, Hongyang and Zhang, Ruichen and Niyato, Dusit and Kang, Jiawen and Xiong, Zehui and Kim, Dong In and Poor, H Vincent},
+  journal={arXiv preprint arXiv:2304.03446},
+  year={2023}
 }
 ```
