@@ -3,8 +3,7 @@ import torch
 import numpy as np
 import random
 from PIL import Image
-# import cv2
-# 1
+
 def seed_everywhere(seed):
     torch.manual_seed(seed)
     torch.cuda.manual_seed(seed)
@@ -27,7 +26,7 @@ seed_everywhere(seed)
 step = 15
 off_step = 4
 scale = 7.5
-savepath = "Offload/seed"+str(seed)+"step"+str(step)
+savepath = "seed"+str(seed)+"step"+str(step)
 # ss: use the offloading or not
 # tt: the offloading processing point
 seed_everywhere(seed)
