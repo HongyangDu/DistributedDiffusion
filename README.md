@@ -4,9 +4,9 @@ This repository contains a partial implementation of the system design and algor
 
 **Exploring Collaborative Distributed Diffusion-Based AI-Generated Content (AIGC) in Wireless Networks**
 
-Please note that only the main function (offloading.py) is currently open-sourced. We will immediately release the complete implementation once our paper has been accepted.
+{写一个标题 一个详细的逐步教程}
 
-
+[第一步，]
 
 
 
