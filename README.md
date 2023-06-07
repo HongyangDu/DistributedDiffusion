@@ -4,6 +4,8 @@ This repository contains a partial implementation of the algorithm as presented 
 
 > **"Exploring Collaborative Distributed Diffusion-Based AI-Generated Content (AIGC) in Wireless Networks"**
 
+![System Model](readme/img0.png)
+
 ---
 
 ## 📝 Table of Contents
@@ -62,7 +64,9 @@ Finally, run `offloading.py` to start the program.
 ## 🔍 Check the results
 
 The parameter "tt" is the offloading processing point
+
 The parameter "ss" is the total denosing steps
+
 For more details, please check the `offloading.py`
 
 ![Results](readme/img5.png)
