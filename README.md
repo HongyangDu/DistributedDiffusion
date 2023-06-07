@@ -2,7 +2,7 @@
 
 This repository contains a partial implementation of the algorithm as presented in:
 
-> **"Exploring Collaborative Distributed Diffusion-Based AI-Generated Content (AIGC) in Wireless Networks [Download Paper](mag_paper.pdf)"**
+> **"Exploring Collaborative Distributed Diffusion-Based AI-Generated Content (AIGC) in Wireless Networks" [Download Paper](mag_paper.pdf)**
 
 ![System Model](readme/img0.png)
 
