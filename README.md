@@ -57,7 +57,7 @@ Replace `pipeline_stable_diffusion.py` with the file of the same name from this 
 ## 🏃‍♀️ Run the Program
 Finally, run `offloading.py` to start the program.
 
- Please note that the model will be downloaded automatically if you are running this code for the first time.
+Please note that the model will be downloaded automatically if you are running this code for the first time.
  
 ![Download Automatically](readme/img4.png)
 
