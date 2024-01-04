@@ -2,6 +2,10 @@
 
 This repository contains a demo implementation of the algorithm as presented in:
 
+> **"User-Centric Interactive AI for Distributed Diffusion Model-based AI-Generated Content" [Download Paper](journal_paper.pdf)**
+
+and
+
 > **"Exploring Collaborative Distributed Diffusion-Based AI-Generated Content (AIGC) in Wireless Networks" [Download Paper](mag_paper.pdf)**
 
 ![System Model](readme/img0.png)
@@ -76,6 +80,16 @@ For more details, please check the `offloading.py`
 ## 📚 Cite Our Work
 
 If our code proves useful in your research, please consider citing our work:
+
+```bibtex
+@article{du2023user,
+  title={User-Centric Interactive AI for Distributed Diffusion Model-based AI-Generated Content},
+  author={Du, Hongyang and Zhang, Ruichen and Niyato, Dusit and Kang, Jiawen and Xiong, Zehui and Cui, Shuguang and Shen, Xuemin and Kim, Dong In},
+  journal={arXiv preprint arXiv:2311.11094},
+  year={2023}
+}
+```
+
 
 ```bibtex
 @article{du2023exploring,
