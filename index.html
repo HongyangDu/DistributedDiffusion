@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>GDMOPT</title>
+  <title>DistributedDiffusion</title>
   <link rel="icon" type="image/x-icon" href="static/images/favico.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -168,37 +168,6 @@
 </section>
 <!-- End image carousel -->
 
-
-<section class="section hero">
-  <div class="container is-max-desktop">
-      <h2 class="title">Tutorial with an Example</h2>
-      <div class="content has-text-justified">
-        <p>
-          In this part, we representatively formulate an optimization problem in a wireless network and show a step-bystep tutorial to solve it by using GDMs.<br>
-Consider a wireless communication network where a base station with total power $P_T$ serves a set of users over multiple orthogonal channels. The objective is to <b>maximize the sum rate</b> of all channels by optimally allocating power among the channels. Let $g_n$ denote the channel gain for the $n$ th channel and $p_n$ denote the power allocated to that channel. The sum rate of all $M$ orthogonal channels is given by the sum of their individual rates. Let the noise level be set as $1$ without loss of generality for the analysis. The optimization goal is to find the power allocation scheme $\{p_1, ..., p_M\}$ that maximizes the sum rate $C$ under the power budget and the non-negativity constraints as:
-        </p>
-        <div align="center">
-          <img src="static/images/3.png"\ width="50%" alt="Problem Formulation"/>
-        </div>
-
-        <p>
-          The dynamic nature of the wireless environment presents a significant challenge, as the values of the channel gains, denoted as $\{g_1, ..., g_M\}$, can fluctuate within a range. Therefore, our objective is, <b>given a set of environmental variables as a condition, to use GDM to denoise the Gaussian noise into the corresponding optimal power allocation scheme under this condition.</b><br>
-          Here, we consider $M= 100$. Specifically, the first 50 channels are in good quality and the last channels are in deep fadings.
-        </p>
-        <pre>
-          <code>
-            def state(self):
-              # Provide the current state to the agent
-              states1 = np.random.uniform(13, 14, 50)
-              states2 = np.random.uniform(0, 0.1, 50)
-              states = np.concatenate([states1, states2])
-              self._laststate = states
-              return states
-          </code>
-        </pre>
-      </div>
-  </div>
-</section>
 
 <section class="section hero">
   <div class="hero-body">
