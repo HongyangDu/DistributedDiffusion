@@ -1,4 +1,4 @@
-# DistributedDiffusion
+# [DistributedDiffusion Project](https://hongyangdu.github.io/DistributedDiffusion/)
 
 This repository contains a demo implementation of the algorithm as presented in:
 
