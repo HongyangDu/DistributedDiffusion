@@ -65,7 +65,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">User-Centric Interactive AI for Distributed Diffusion Model-based AI-Generated Content</h1>
+            <h1 class="title is-1 publication-title">Collaborative Distributed Diffusion-Based AI-Generated Content (AIGC)</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -80,23 +80,23 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/abs/2311.11094" target="_blank"
+                        <a href="https://arxiv.org/pdf/2311.11094.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Paper</span>
+                        <span>Journal Paper</span>
                       </a>
                     </span>
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/Journal.pdf" target="_blank"
+                      <a href="https://arxiv.org/pdf/2304.03446.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
-                      <span>Supplementary</span>
+                      <span>Magazine Paper</span>
                     </a>
                   </span> 
 
@@ -138,7 +138,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Distributed Artificial Intelligence-Generated Content (AIGC) has attracted increasing attention. However, it faces two significant challenges: how to maximize the subjective Quality of Experience (QoE) and how to enhance the energy efficiency, which are particularly pronounced in widely adopted Generative Diffusion Model (GDM)-based AIGC services for image generation. In this paper, we propose a novel user-centric Interactive AI (IAI) approach for service management, with a distributed GDM-based AIGC framework, prioritizing efficient and collaborative GDM deployment. Specifically, we restructure the GDM's inference process, i.e., the denoising chain, to enable users' semantically similar prompts to share a portion of diffusion steps. Furthermore, to maximize the users' subjective QoE, we propose an IAI approach, i.e., Reinforcement Learning With Large Language Models Interaction (RLLI), which utilizes Large Language Model (LLM)-empowered generative agents to replicate users interaction, providing real-time and subjective QoE feedback that reflects a spectrum of user personalities. Lastly, we present the GDM-based Deep Deterministic Policy Gradient (G-DDPG) algorithm, adapted to the proposed RLLI framework, for effective communication and computing resource allocation while considering user subjective personalities and dynamic wireless environments in decision-making. Simulation results show that G-DDPG can increase the sum QoE by 15%, compared with the conventional DDPG algorithm. 
+            Driven by advances in generative artificial intelligence (AI) techniques and algorithms, the widespread adoption of AI-generated content (AIGC) has emerged, allowing for the generation of diverse and high-quality content. Especially, the <b>diffusion model-based AIGC</b> technique has been widely used to generate content in a variety of modalities. However, the real-world implementation of AIGC models, particularly on resource-constrained devices such as mobile phones, introduces significant challenges related to energy consumption and privacy concerns. To further promote the realization of ubiquitous AIGC services, we propose a novel collaborative distributed diffusion-based AIGC framework. By capitalizing on collaboration among devices in wireless networks, the proposed framework facilitates the efficient execution of AIGC tasks, optimizing edge computation resource utilization. Furthermore, we examine the practical implementation of the denoising steps on mobile phones, the impact of the proposed approach on the wireless network-aided AIGC landscape, and the future opportunities associated with its real-world integration. The contributions of this paper not only offer a promising solution to the existing limitations of AIGC services but also pave the way for future research in device collaboration, resource optimization, and the seamless delivery of AIGC services across various devices.
           </p>
         </div>
       </div>
@@ -156,22 +156,10 @@
        <div class="item">
         <!-- Your image here -->
         <div align="center">
-          <img src="static/images/0.jpg" width="70%" alt="Tutorial Structure"/>
+          <img src="readme/img0.png" width="70%" alt="System Model"/>
         </div>
         <h2 class="subtitle has-text-centered">
-          The structure of our tutorial.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/1.png" alt="Network Optimization via GDM"/>
-        <h2 class="subtitle has-text-centered">
-          This figure demonstrates the network optimization via generative diffusion models.
-        </h2>
-        <h2 class="subtitle has-text-justified">
-          GDM training approaches with and without an expert dataset. <br>
-          <b>Part A</b> illustrates the GDM training scenario when an expert database is accessible. The process learns from the GDM applications in the image domain: the optimal solution is retrieved from the expert database upon observing an environmental condition, followed by the GDM learning to replicate this optimal solution through forward diffusion and reverse denoising process.<br> 
-          <b>Part B</b> presents the scenario where no expert database exists. In this case, GDM, with the assistance of a jointly trained solution evaluation network, learns to generate the optimal solution for a given environmental condition by actively exploring the unknown environment.
+          System Model.
         </h2>
       </div>
   </div>
@@ -212,59 +200,45 @@ Consider a wireless communication network where a base station with total power 
   </div>
 </section>
 
-<section class="section hero" >
-  <div class="hero-body" >
-  <div class="container is-max-desktop content">
-    <h2 class="title">Run the Program</h2>
-    <div class="content has-text-justified">
-      <p>1) Create a new conda environment with the following command:</p>
-    </div>
-    <pre><code>conda create --name gdmopt python==3.8</code></pre>
-    <div class="content has-text-justified">
-      <p>2) Activate the created environment with the following command:</p>
-    </div>
-    <pre><code>conda activate gdmopt</code></pre>
-    <div class="content has-text-justified">
-      <p>3) Install the following packets using pip:</p>
-    </div>
-    <pre><code>
-      pip install tianshou==0.4.11
-      pip install matplotlib==3.7.3
-      pip install scipy==1.10.1
-    </code></pre>
-    <div class="content has-text-justified">
-      <p>
-        4) Run main.py in the file Main to start the program.<br>
-        <b>A</b>. For the case that an expert database is accessible, in main.py, please set
-        <pre><code>parser.add_argument('--expert-coef', default=True)</code></pre>
-        In env/utility.py, please set
-        <pre><code>actions = torch.abs(actions)</code></pre>
-        <b>B</b>. For the scenario where no expert database exists, in main.py, please set
-        <pre><code>parser.add_argument('--expert-coef', default=False)</code></pre>
-        In env/utility.py, please set
-        <pre><code>actions = torch.sigmod(actions)</code></pre>
-      </p>
+<section class="section hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop content">
+      <h2 class="title">🔧 Environment Setup</h2>
+      <p>To create a new conda environment, run the following command:</p>
+      <pre><code>conda create --name disdiff python==3.9</code></pre>
+
+      <h2 class="title">⚡ Activate Environment</h2>
+      <p>Activate the created environment with:</p>
+      <pre><code>conda activate disdiff</code></pre>
+
+      <h2 class="title">📦 Install Required Packages</h2>
+      <p>You need to install the following packages using pip:</p>
+      <pre><code>pip install diffusers==0.13.1
+pip install torch==2.0.1
+pip install transformers==4.29.2
+pip install accelerate==0.20.0
+</code></pre>
+
+      <h2 class="title">🔍 Locate StableDiffusionPipeline</h2>
+      <p>Open <code>offloading.py</code> in your code editor. Hold <code>ctrl</code> key if you are on Windows or <code>command</code> key if you are on Mac, and click on <code>StableDiffusionPipeline</code>.</p>
+      <img src="readme/img1.png" alt="Location of StableDiffusionPipeline">
+
+      <h2 class="title">🔄 Replace with Project File</h2>
+      <p>Replace <code>pipeline_stable_diffusion.py</code> with the file of the same name from this repository.</p>
+      <img src="readme/img2.png" alt="Location of StableDiffusionPipeline">
+
+      <h2 class="title">🏃‍♀️ Run the Program</h2>
+      <p>Finally, run <code>offloading.py</code> to start the program. The model will be downloaded automatically if you are running this code for the first time.</p>
+      <img src="readme/img3.png" alt="Download Automatically">
+
+      <h2 class="title">🔍 Check the results</h2>
+      <p>The parameter "tt" is the offloading processing point, and the parameter "ss" is the total denoising steps. For more details, please check the <code>offloading.py</code>.</p>
+      <img src="readme/img4.png" alt="Results">
     </div>
   </div>
-</div>
 </section>
 
-<section class="section hero" >
-  <div class="hero-body">
-  <div class="container is-max-desktop content">
-    <h2 class="title">Insights</h2>
-    <div class="content has-text-justified">
-      <p>
-        <b>A</b>. Note that the power allocation problem we consider here is a highly simplified one. In such cases, the performance of GDM is not always superior to DRL. For more realistic optimization problems (such as decision problems involving state transitions), considering combining GDM with DRL could be worthwhile, as is explored in our <a href="https://github.com/Lizonghang/AGOD" target="_blank">D2SAC code</a> and paper <a href="https://arxiv.org/abs/2303.13052" target="_blank">Generative AI-aided Optimization for AI-Generated Content (AIGC) Services in Edge Networks</a><br>
-        <b>B</b>. The relationship between GDMs and DRL in intelligent network optimization is not just the substitution or competition but rather a compliment and/or supplement of each other that allows for mutual enhancement and learning. In situations where expert strategies are not available for guidance, GDM can leverage a solution evaluation network during the training phase. This is like the Q-network commonly used in DRL. The solution evaluation network estimates the quality of a given solution, e.g., the power allocation scheme in the discussed example, under specific environmental conditions. This quality assessment guides the GDM during its iterative denoising process. Moreover, other advanced techniques from the DRL field can be adopted to make GDM training even more efficient. For example, the double Q-learning technique, which aims at reducing over-estimation in Q-learning, can be adopted. This approach maintains two Q-networks, using the smaller Q-value for updates, thus offering a conservative estimate and mitigating over-optimistic solution assessments. Incorporating such methods can augment GDM training, promoting robustness and efficiency. 
-        <div align="center">
-          <img src="static/images/9.png"\ width="50%" alt="Problem Formulation"/>
-        </div>
-      </p>
-    </div>
-  </div>
-</div>
-</section>
+
 
 
 <!--BibTex citation -->
@@ -272,12 +246,30 @@ Consider a wireless communication network where a base station with total power 
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       
-      <pre><code>@article{du2023beyond,
-        title={Beyond deep reinforcement learning: A tutorial on generative diffusion models in network optimization},
-        author={Du, Hongyang and Zhang, Ruichen and Liu, Yinqiu and Wang, Jiacheng and Lin, Yijing and Li, Zonghang and Niyato, Dusit and Kang, Jiawen and Xiong, Zehui and Cui, Shuguang and Ai, Bo and Zhou, Haibo and Kim, Dong In},
-        journal={arXiv preprint arXiv:2308.05384},
-        year={2023}
-      }</code></pre>
+      <pre><code>@article{du2023exploring,
+  title={Exploring collaborative distributed diffusion-based AI-generated content (AIGC) in wireless networks},
+  author={Du, Hongyang and Zhang, Ruichen and Niyato, Dusit and Kang, Jiawen and Xiong, Zehui and Kim, Dong In and Shen, Xuemin Sherman and Poor, H Vincent},
+  journal={IEEE Network},
+  number={99},
+  pages={1--8},
+  year={2023},
+  publisher={IEEE}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      
+      <pre><code>@article{du2023user,
+  title={User-Centric Interactive AI for Distributed Diffusion Model-based AI-Generated Content},
+  author={Du, Hongyang and Zhang, Ruichen and Niyato, Dusit and Kang, Jiawen and Xiong, Zehui and Cui, Shuguang and Shen, Xuemin and Kim, Dong In},
+  journal={arXiv preprint arXiv:2311.11094},
+  year={2023}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
