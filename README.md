@@ -1,4 +1,4 @@
-# [DistributedDiffusion Project](https://hongyangdu.github.io/DistributedDiffusion/)
+# Distributed Diffusion Project
 
 This repository provides a reference implementation of the distributed diffusion framework proposed in the following works:
 
