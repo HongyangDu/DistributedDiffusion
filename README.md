@@ -1,12 +1,14 @@
 # [DistributedDiffusion Project](https://hongyangdu.github.io/DistributedDiffusion/)
 
-This repository contains a demo implementation of the algorithm as presented in:
+This repository provides a reference implementation of the distributed diffusion framework proposed in the following works:
 
-> **"User-Centric Interactive AI for Distributed Diffusion Model-based AI-Generated Content" [Download Paper](journal_paper.pdf)**
+> **Reinforcement Learning With LLMs Interaction For Distributed Diffusion Model Services" [Download Paper](https://arxiv.org/abs/2311.11094), TPAMI, 2025**
 
 and
 
 > **"Exploring Collaborative Distributed Diffusion-Based AI-Generated Content (AIGC) in Wireless Networks" [Download Paper](mag_paper.pdf)**
+
+The implementation demonstrates how diffusion model inference can be partitioned and offloaded across distributed computing entities.
 
 ![System Model](readme/img0.png)
 
@@ -133,11 +135,12 @@ For more details, please check the `offloading.py`
 If our code proves useful in your research, please consider citing our work:
 
 ```bibtex
-@article{du2023user,
-  title={User-Centric Interactive AI for Distributed Diffusion Model-based AI-Generated Content},
+@article{du2025reinforcement,
+  title={Reinforcement Learning With LLMs Interaction For Distributed Diffusion Model Services},
   author={Du, Hongyang and Zhang, Ruichen and Niyato, Dusit and Kang, Jiawen and Xiong, Zehui and Cui, Shuguang and Shen, Xuemin and Kim, Dong In},
-  journal={arXiv preprint arXiv:2311.11094},
-  year={2023}
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2025},
+  publisher={IEEE}
 }
 ```
 
